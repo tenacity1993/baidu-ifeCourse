@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 3</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            margin: 0 auto;
+        }
+
+        .container {
+            position: relative;
+            /*width: 100%;*/
+            background-color: #eeeeee;
+            border: 1px solid #999999;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .box_left {
+            background-color: #fff;
+            padding: 20px;
+            width: 160px;
+            border: 1px solid #999999;
+        }
+
+        .box_right {
+            background-color: #fff;
+            padding: 20px;
+            width: 80px;
+            border: 1px solid #999999;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: #eeeeee;
+            border: 1px solid #999999;
+        }
+
+        .clear {
+            *zoom: 1;
+        }
+
+        .clear:after {
+            display: block;
+            visibility: hidden;
+            clear: both;
+            height: 0;
+            content: "\0020"
+        }
+
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+
+        .middle {
+            background-color: #fff;
+            border: 1px solid #999999;
+            /*height:200px;*/
+            padding: 20px;
+            /*margin-top:20px;*/
+            margin-left: 220px;
+            margin-right: 140px;
+            /*width:500px;*/
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container clear">
+    <div class="float-left box_left">
+        <div class="logo float-left">前端学习 <br>小分队</div>
+        <div class="float-right">前端学习</div>
+    </div>
+    <div class="float-right box_right">
+        <div class="logo mb-20"></div>
+        <div class="logo mb-20"></div>
+        <div class="logo mb-20"></div>
+        <div class="logo"></div>
+    </div>
+    <div class="middle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+        <br>elit. Aliquam consectetur consequatur deserunt eius
+        explicabo id ipsum quam similique voluptas voluptatum!Accusantium assumenda ipsum libero minus molestias
+        porro quaerat, reprehenderit sit!</p>
+    </div>
+</div>
+</body>
+</html>

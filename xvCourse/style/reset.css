@@ -1,0 +1,129 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section{
+	display: block;
+}
+/*quotes 属性设置嵌套引用（embedded quotation）的引号类型。*/
+blockquote,
+q{
+	quotes: none;
+}
+a{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+li{
+	list-style-type: none;
+}
+body{
+	font-family: Helvetica, "Microsoft Yahei", STHeiTi, sans-serif;
+}
+p{
+	/* font-size: 16px; */
+}
+.clear{
+	*zoom: 1;
+}
+.clear:after{
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: "\0020"
+}
+q{
+	border-left: 4px solid #42b983;
+	padding-left: 20px;
+	margin: 2px;
+}
