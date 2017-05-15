@@ -1,0 +1,938 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+textarea,
+div,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clear {
+  *zoom: 1;
+}
+.clear:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: "\0020";
+}
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.container {
+  min-width: 1280px;
+  height: 4554px;
+  background-color: #ffffff;
+  overflow: scroll;
+}
+.container header {
+  width: 1280px;
+  height: 58px;
+  background-color: #ffffff;
+}
+.container header .header-icon {
+  width: 30px;
+  height: 31px;
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-image: url(../img/img7-1.png);
+  background-repeat: no-repeat;
+  line-height: 58px;
+}
+.container header .header-title-text {
+  display: inline-block;
+  position: relative;
+  top: -16px;
+  font-size: 21px;
+  font-family: SimHei;
+  color: #393a3a;
+  line-height: 58px;
+}
+.container header .header-ul {
+  margin-right: 66px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 58px;
+}
+.container header .header-ul li {
+  display: inline-block;
+  width: 66px;
+  text-align: center;
+  margin-left: 42px;
+}
+.container header .header-ul a {
+  text-decoration: none;
+  color: #787b83;
+  font-family: "Microsoft YaHei";
+}
+.container header .header-ul .curr {
+  border-bottom: solid 5px #d45d5c;
+}
+.container header .header-ul .login {
+  position: relative;
+  top: 2px;
+  left: -5px;
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  background: url("../img/img7-24.png") no-repeat;
+}
+.container .banner {
+  position: relative;
+  top: 5px;
+  height: 944px;
+}
+.container .banner .banner-img {
+  position: absolute;
+}
+.container .banner .banner-mask {
+  opacity: 0.2;
+  position: absolute;
+  z-index: 2;
+}
+.container .banner .banner-text {
+  z-index: 3;
+  position: absolute;
+  margin-top: 228px;
+  margin-left: 114px;
+}
+.container .banner .banner-text-1 {
+  font-size: 60px;
+  line-height: 50px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+}
+.container .banner .banner-text-2 {
+  margin-top: 30px;
+  margin-left: 8px;
+  font-size: 21px;
+  font-family: "Microsoft YaHei";
+  color: #fffdfd;
+  line-height: 37px;
+}
+.container .banner .banner-enter {
+  z-index: 3;
+  position: absolute;
+  top: 429px;
+  left: 126px;
+  width: 331px;
+  height: 65px;
+  background-color: #e74f4d;
+  text-align: center;
+  line-height: 65px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Microsoft YaHei";
+}
+.container .banner .banner-icons {
+  z-index: 4;
+  /*父元素字体设为0  解决inline-block 间距问题    子元素要记得重置字体大小*/
+  font-size: 0;
+  position: absolute;
+  top: 692px;
+  width: 1280px;
+  height: 253px;
+  background-color: #ffffff;
+}
+.container .banner .banner-icon {
+  display: inline-block;
+  height: 252px;
+}
+.container .banner .area-1 {
+  width: 325px;
+}
+.container .banner .icon-1 {
+  position: absolute;
+  top: 45px;
+  left: 145px;
+  /* 设置宽度和高度图片才能显示出来 */
+  width: 42px;
+  height: 42px;
+  background-image: url(../img/img7-4.png);
+}
+.container .banner .icon-text {
+  font-size: 14px;
+  font-family: SimHei;
+  color: #767777;
+  text-align: center;
+  line-height: 18px;
+}
+.container .banner .text-1 {
+  position: absolute;
+  top: 133px;
+  left: 89px;
+  height: 50px;
+  padding-right: 80px;
+  border-right: 2px solid #aaaaaa;
+}
+.container .banner .area-2 {
+  width: 335px;
+}
+.container .banner .icon-2 {
+  position: absolute;
+  top: 46px;
+  left: 477px;
+  /* 设置宽度和高度图片才能显示出来 */
+  width: 35px;
+  height: 40px;
+  background-image: url(../img/img7-5.png);
+  background-repeat: no-repeat;
+}
+.container .banner .text-2 {
+  position: absolute;
+  top: 134px;
+  left: 418px;
+  height: 50px;
+  padding-right: 80px;
+  border-right: 2px solid #aaaaaa;
+}
+.container .banner .icon-3 {
+  position: absolute;
+  top: 46px;
+  left: 789px;
+  width: 35px;
+  height: 40px;
+  background-image: url(../img/img7-6.png);
+  background-repeat: no-repeat;
+}
+.container .banner .text-3 {
+  position: absolute;
+  top: 133px;
+  left: 730px;
+  height: 50px;
+  padding-right: 80px;
+  border-right: 2px solid #aaaaaa;
+}
+.container .banner .icon-4 {
+  position: absolute;
+  top: 45px;
+  left: 1104px;
+  width: 41px;
+  height: 40px;
+  background-image: url(../img/img7-7.png);
+  background-repeat: no-repeat;
+}
+.container .banner .text-4 {
+  position: absolute;
+  top: 133px;
+  left: 1047px;
+}
+.container .content {
+  position: relative;
+  height: 3141px;
+  width: 1280px;
+}
+.container .content .content-title {
+  width: 1280px;
+  height: 360px;
+  background-image: url(../img/img7-8.png);
+}
+.container .content .content-title-icon {
+  display: inline-block;
+  position: absolute;
+  top: 89px;
+  left: 595px;
+  width: 91px;
+  height: 92px;
+  background-image: url(../img/img7-9.png);
+}
+.container .content .content-title-text {
+  position: absolute;
+  top: 229px;
+  left: 212px;
+  font-family: SimHei;
+  font-size: 54px;
+  color: #a1a1a1;
+  line-height: 1.056;
+}
+.container .content .content-search-area {
+  position: relative;
+  width: 1280px;
+  height: 340px;
+  background-image: url(../img/img7-10.png);
+  background-repeat: no-repeat;
+}
+.container .content .content-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 1280px;
+  height: 340px;
+  opacity: 0.2;
+  background-image: url(../img/img7-11.png);
+  background-repeat: no-repeat;
+}
+.container .content .content-search-title {
+  z-index: 5;
+  position: absolute;
+  top: 52px;
+  left: 501px;
+  font-family: "Microsoft YaHei";
+  font-size: 21px;
+  color: #ffffff;
+}
+.container .content .content-search-text {
+  position: absolute;
+  top: 106px;
+  left: 449px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2.605;
+}
+.container .content .content-select {
+  display: inline-block;
+}
+.container .content .content-select select {
+  z-index: 3;
+  background: url("../img/img7-12.png") no-repeat scroll right transparent;
+  border: 0;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+  margin-right: 28px;
+  width: 228px;
+  height: 36px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: #a8aaaa;
+  line-height: 2.213;
+  padding-left: 10px;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*for chrome*/
+}
+.container .content .country-select {
+  background-color: #fff;
+  position: absolute;
+  top: 171px;
+  left: 126px;
+  width: 236px;
+  height: 36px;
+  border: 1px solid #be4f48;
+}
+.container .content .province-select {
+  background-color: #fff;
+  position: absolute;
+  top: 171px;
+  left: 390px;
+  width: 236px;
+  height: 36px;
+  border: 1px solid #be4f48;
+}
+.container .content .city-select {
+  background-color: #fff;
+  position: absolute;
+  top: 171px;
+  left: 655px;
+  width: 236px;
+  height: 36px;
+  border: 1px solid #be4f48;
+}
+.container .content .search-btn {
+  position: absolute;
+  top: 171px;
+  left: 920px;
+  width: 236px;
+  height: 36px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  background-color: #bf4f49;
+  text-align: center;
+  line-height: 36px;
+}
+.container .content .province-options {
+  position: absolute;
+  z-index: 3;
+  top: 207px;
+  left: 390px;
+  width: 236px;
+  height: 170px;
+  background-color: #e3e3e4;
+  border: 1px solid #be4f48;
+}
+.container .content .province-options li {
+  font-size: 12px;
+  padding-left: 32px;
+  font-family: "Microsoft YaHei";
+  color: rgba(50, 51, 51, 0.702);
+  line-height: 2.167;
+}
+.container .content .province-options li:first-child {
+  background-color: #be4f48;
+}
+.container .content .province-options .curr {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  background: url("../img/img7-13.png") no-repeat;
+}
+.container .content .content-activities {
+  position: relative;
+  width: 1280px;
+  height: 605px;
+  background-color: #f7f7f7;
+}
+.container .content .content-activity {
+  position: absolute;
+  width: 219px;
+  height: 337px;
+  background-image: url(../img/img7-14.png);
+  background-repeat: no-repeat;
+  border: 1px dashed #aaaaaa;
+}
+.container .content .activity-1 {
+  top: 100px;
+  left: 147px;
+}
+.container .content .activity-2 {
+  top: 153px;
+  left: 403px;
+}
+.container .content .activity-3 {
+  top: 100px;
+  left: 659px;
+}
+.container .content .activity-4 {
+  top: 100px;
+  left: 914px;
+}
+.container .content .content-activity-img {
+  z-index: 2;
+  position: relative;
+  top: 112px;
+  left: 156px;
+}
+.container .content .content-activity-text {
+  position: absolute;
+  z-index: 3;
+  top: 104px;
+  left: 221px;
+}
+.container .content .content-activity-grid {
+  position: relative;
+  width: 1280px;
+  height: 1092px;
+  background-color: #ffffff;
+}
+.container .content .grid-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 851px;
+  height: 565px;
+  background: url("../img/img7-17.png") no-repeat;
+}
+.container .content .grid-1 h2 {
+  position: absolute;
+  top: 131px;
+  left: 352px;
+  font-size: 49.473px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  line-height: 1.528;
+}
+.container .content .grid-1 h1 {
+  position: absolute;
+  top: 190px;
+  left: 237px;
+  font-size: 157.788px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  line-height: 1;
+}
+.container .content .grid-1 p {
+  position: absolute;
+  top: 347px;
+  left: 349px;
+  font-size: 22px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  line-height: 1.969;
+}
+.container .content .activity-triangle {
+  position: absolute;
+  top: 267px;
+  left: 826px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15.5px 26px 15.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+.container .content .grid-2 {
+  position: absolute;
+  top: 0;
+  left: 850px;
+  width: 430px;
+  height: 567px;
+}
+.container .content .grid-2-title {
+  background: url("../img/img7-18.png") no-repeat;
+  position: absolute;
+  top: 162px;
+  left: 164px;
+  width: 103px;
+  height: 20px;
+}
+.container .content .grid-2-text {
+  position: absolute;
+  top: 213px;
+  left: 72px;
+  width: 288px;
+  height: 102px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: #aaaaaa;
+  line-height: 2.5;
+}
+.container .content .grid-2-more {
+  position: absolute;
+  top: 364px;
+  left: 163px;
+  width: 107px;
+  height: 35px;
+  border: 1px solid #d45d5c;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: #e25c60;
+  text-align: center;
+  line-height: 35px;
+}
+.container .content .grid-2-circle {
+  position: absolute;
+  top: 423px;
+  left: 187px;
+}
+.container .content .cirle-1 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px #999999 solid;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+.container .content .curr {
+  background-color: #929293;
+}
+.container .content .grid-3 {
+  position: absolute;
+  top: 565px;
+  width: 426px;
+  height: 521px;
+  background-color: #e74f4d;
+}
+.container .content .grid-3 h2 {
+  position: absolute;
+  top: 173px;
+  left: 129px;
+  font-size: 21px;
+  font-family: "SimHei";
+  color: #ffffff;
+  line-height: 1.446;
+  text-align: center;
+}
+.container .content .grid-3-line {
+  position: absolute;
+  top: 247px;
+  left: 198px;
+  background: url("../img/img7-19.png") no-repeat;
+  display: inline-block;
+  width: 31px;
+  height: 3px;
+}
+.container .content .grid-3-more {
+  position: absolute;
+  top: 275px;
+  left: 128px;
+  width: 170px;
+  height: 44px;
+  border: 1px solid #ffffff;
+  font-size: 21px;
+  font-family: "SimHei";
+  color: #ffffff;
+  line-height: 44px;
+  text-align: center;
+}
+.container .content .grid-4 {
+  position: absolute;
+  left: 425px;
+  background-color: #fff;
+}
+.container .content .grid-4 h2 {
+  font-size: 21px;
+  font-family: "SimHei";
+  color: #323333;
+  line-height: 1.446;
+}
+.container .content .grid-4-line {
+  position: absolute;
+  top: 247px;
+  left: 198px;
+  background: url("../img/img7-20.png") no-repeat;
+  display: inline-block;
+  width: 31px;
+  height: 3px;
+}
+.container .content .grid-4-more {
+  border: 1px solid #e74f4d;
+  color: #e74f4d;
+}
+.container .content .grid-5 {
+  display: inline-block;
+  position: absolute;
+  top: 563px;
+  left: 852px;
+  width: 431px;
+  height: 521px;
+  background: url("../img/img7-21.png") no-repeat;
+}
+.container .content .grid-5-mask {
+  position: absolute;
+  width: 431px;
+  height: 521px;
+  background-color: rgba(4, 0, 0, 0.4);
+}
+.container .content .grid-5-triangle {
+  position: absolute;
+  top: 245px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15.5px 0 15.5px 26px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.container .content .grid-join-us {
+  position: absolute;
+  top: 1084px;
+  width: 1283px;
+  height: 750px;
+  background-color: #ffffff;
+}
+.container .content .grid-join-us h1 {
+  position: absolute;
+  top: 118px;
+  left: 557px;
+  font-size: 21px;
+  font-family: "SimHei";
+  color: #323333;
+  line-height: 1.446;
+}
+.container .content .grid-join-us h2 {
+  position: absolute;
+  top: 165px;
+  left: 431px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  color: #aaaaaa;
+  line-height: 1.5;
+  text-align: center;
+}
+.container .content .grid-join-us-line {
+  position: absolute;
+  top: 150px;
+  left: 623px;
+  width: 30px;
+  height: 3px;
+  background-color: #e74f4d;
+}
+.container .content .grid-protocol {
+  position: absolute;
+  top: 301px;
+  left: 134px;
+  width: 300px;
+  height: 283px;
+  background-color: #ffffff;
+}
+.container .content .grid-protocol .grid-protocol-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100px;
+}
+.container .content .grid-protocol h2 {
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-family: "SimHei";
+  color: rgba(35, 24, 21, 0.8);
+  line-height: 22px;
+}
+.container .content .grid-protocol-1-content {
+  margin-top: 41px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgba(35, 24, 21, 0.6);
+  line-height: 1.75;
+}
+.container .content .grid-protocol-1-more {
+  position: absolute;
+  top: 90px;
+  left: 250px;
+}
+.container .content .grid-protocol-1-more .grid-protocol-1-arrow {
+  background: url("../img/img7-22.png") no-repeat;
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+}
+.container .content .grid-protocol-1-more span {
+  display: inline-block;
+  left: 14px;
+  top: -8px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgba(35, 24, 21, 0.6);
+  line-height: 1.621;
+  position: absolute;
+}
+.container .content .grid-protocol-2 {
+  position: absolute;
+  top: 130px;
+  width: 300px;
+  height: 104px;
+}
+.container .content .grid-protocol-3 {
+  position: absolute;
+  top: 238px;
+  width: 300px;
+}
+.container .content .grid-3-more {
+  top: 36px;
+}
+.container .content .grid-apply {
+  position: absolute;
+  top: 298px;
+  right: 140px;
+  width: 639px;
+  height: 286px;
+}
+.container .content .apply-grid {
+  position: absolute;
+  background-color: #ececee;
+  width: 293px;
+  height: 41px;
+  line-height: 41px;
+  padding-left: 18px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: rgba(35, 24, 21, 0.8);
+}
+.container .content .apply-grid input {
+  background-color: #ececee;
+  outline: none;
+  border: none;
+}
+.container .content .apply-name {
+  left: 0;
+  top: 0;
+}
+.container .content .apply-age {
+  top: 0;
+  right: 0;
+}
+.container .content .apply-tel {
+  top: 54px;
+  left: 0;
+}
+.container .content .apply-addr {
+  right: 0;
+  top: 54px;
+}
+.container .content .grid-apply-textarea {
+  position: absolute;
+  top: 408px;
+  left: 502px;
+  width: 621px;
+  height: 121px;
+  background-color: #ececee;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 28px;
+  font-family: "SimSun";
+  color: rgba(35, 24, 21, 0.8);
+}
+.container .content .grid-apply-textarea textarea {
+  background-color: #ececee;
+  border: 0;
+  resize: none;
+}
+.container .content .apply-submit {
+  background-color: #ececee;
+  position: absolute;
+  bottom: 165px;
+  right: 139px;
+  width: 639px;
+  height: 41px;
+  text-align: center;
+  line-height: 41px;
+}
+.container footer .contact-us {
+  position: relative;
+  width: 1280px;
+  height: 361px;
+  background-color: #32363e;
+}
+.container footer .contact-us h1 {
+  padding-top: 92px;
+  font-size: 21px;
+  font-family: "SimHei";
+  color: #ffffff;
+  line-height: 2.303;
+  text-align: center;
+}
+.container footer .contact-us p {
+  position: relative;
+  width: 468px;
+  left: 406px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+}
+.container footer .email {
+  display: inline-block;
+  position: relative;
+  width: 512px;
+  height: 41px;
+  margin-left: 385px;
+  margin-top: 30px;
+  background-color: #fff;
+  line-height: 41px;
+}
+.container footer .email input {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  width: 431px;
+}
+.container footer .email input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  color: #aaaaaa;
+  line-height: 1.927;
+}
+.container footer .email .submit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 81px;
+  height: 41px;
+  background-color: #6f7178;
+  font-size: 15px;
+  font-family: "Microsoft YaHei";
+  color: #ffffff;
+  line-height: 41px;
+  text-align: center;
+}
+.container footer .icons {
+  position: absolute;
+  top: 261px;
+  left: 550px;
+}
+.container footer .qq {
+  display: inline-block;
+  width: 24px;
+  height: 25px;
+  background: url("../img/img7-23.png") no-repeat 0 0;
+}
+.container footer .weibo {
+  margin-left: 28px;
+  display: inline-block;
+  -webkit-background-size: 29px 25px;
+  background-size: 29px 25px;
+  width: 29px;
+  height: 25px;
+  background: url("../img/img7-23.png") no-repeat -24px 0;
+}
+.container footer .twitter {
+  margin-left: 28px;
+  display: inline-block;
+  -webkit-background-size: 29px 25px;
+  background-size: 29px 25px;
+  width: 29px;
+  height: 25px;
+  background: url("../img/img7-23.png") no-repeat -53px 0;
+}
+.container footer .internet {
+  margin-left: 28px;
+  display: inline-block;
+  -webkit-background-size: 24px 25px;
+  background-size: 24px 25px;
+  width: 24px;
+  height: 25px;
+  background: url("../img/img7-23.png") no-repeat -82px 0;
+}
+.container footer .footer-bottom {
+  position: relative;
+  width: 1280px;
+  height: 58px;
+  background-color: #2f2f38;
+}
+.container footer .left-text {
+  padding-left: 96px;
+  padding-top: 26px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: #ffffff;
+  line-height: 1.9;
+}
+.container footer .right-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 26px;
+  padding-right: 38px;
+  font-size: 12px;
+  font-family: "SimSun";
+  color: #ffffff;
+  line-height: 2.25;
+}
+.ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ellipsis-2 {
+  display: -webkit-box !important;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
