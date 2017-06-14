@@ -45,10 +45,12 @@
        var result = aqiData.filter(function(item, index, array){
            return item[1] > 60;
        });
-       console.log(result);
+       result.sort(function (a, b) {
+           return b[1] - a[1];
+       });
        result.forEach(function(item, index, array){
            var el = document.createElement('li');
-           el.innerHTML = array[index][0];
+           el.innerHTML = '第' + (index + 1) + '名:' + array[index][0] + '，'+ array[index][1];
            list.appendChild(el);
        })
 
