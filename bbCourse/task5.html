@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IFE JavaScript Task 05</title>
+  <style media="screen">
+    .num-box {
+      display: inline-block;
+      margin-left: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(232, 45, 45);
+      margin-top: 10px;
+      text-align: center;
+      line-height: 40px;
+      color: #ced9cb
+    }
+
+    input {
+      border: 1px solid #443372
+    }
+
+    #buttons {
+      display: inline-block;
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="number">
+  <div id="buttons">
+    <button type="button" name="left-in" id="left-in">左侧入</button>
+    <button type="button" name="right-in" id="right-in">右侧入</button>
+    <button type="button" name="left-out" id="left-out">左侧出</button>
+    <button type="button" name="right-out" id="right-out">右侧出</button>
+  </div>
+  <div id="num-list">
+  </div>
+  <script type="text/javascript">
+    let list = [];
+    let input = document.querySelector('input');
+    let numList = document.querySelector('#num-list');
+    input.onfocus = function() {
+      input.value = '';
+    }
+    document.querySelector('#buttons').onclick = function(el) {
+      let target = el.target.id;
+      let num = input.value;
+      if (judgment(num)) {
+        switch (target) {
+          case 'right-out':
+            list.pop(num);
+            break;
+          case 'left-out':
+            list.shift(num);
+            break;
+          case 'right-in':
+            if (list.length <= 59) {
+              list.push(num);
+            } else {
+              alert('数组长度已到达上限');
+            }
+            break;
+          case 'left-in':
+            if (list.length <= 59) {
+              list.unshift(num);
+            } else {
+              alert('数组长度已到达上限');
+            }
+            break;
+          default:
+            break;
+        }
+        show(list);
+      };
+
+    }
+
+    function show(data) {
+      if (numList.childElementCount) {
+        numList.removeChild(document.querySelector('#num-list>div'));
+      }
+      let len = data.length;
+      let newlist = document.createElement('div');
+      for (let i = 0; i < len; i++) {
+        let el = document.createElement('div');
+        // el.innerHTML = data[i];
+        el.className = 'num-box';
+        el.style.height = data[i] + 'px';
+        newlist.appendChild(el);
+      }
+      numList.appendChild(newlist)
+    }
+
+    function judgment(data) {
+      if (data) {
+        if (parseInt(data) > 100 || parseInt(data) < 10) {
+          alert('输入字符不合规范，请输入10-100内的数字');
+        } else {
+          return data;
+        }
+      } else {
+        alert('请输入数字')
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IFE JavaScript Task 04</title>
+  <style media="screen">
+    .num-box {
+      display: inline-block;
+      margin-left: 5px;
+      width: 40px;
+      height: 40px;
+      background-color: rgb(232, 45, 45);
+      margin-top: 10px;
+      text-align: center;
+      line-height: 40px;
+      color: #ced9cb
+    }
+  </style>
+</head>
+
+<body>
+  <input type="number">
+  <button type="button" name="left-in" id="left-in">左侧入</button>
+  <button type="button" name="right-in" id="right-in">右侧入</button>
+  <button type="button" name="left-out" id="left-out">左侧出</button>
+  <button type="button" name="right-out" id="right-out">右侧出</button>
+  <div id="num-list">
+    <!-- <div class="num-box"></div> -->
+  </div>
+  <script type="text/javascript">
+    let list = [];
+    let input = document.querySelector('input');
+    let numList = document.querySelector('#num-list');
+    input.onfocus = function() {
+      input.value = '';
+    }
+    document.getElementById('left-in').onclick = function() {
+      let num = input.value;
+      if (num)
+        list.unshift(num);
+      show(list);
+    }
+    document.getElementById('right-in').onclick = function() {
+      let num = input.value;
+      if (num)
+        list.push(num);
+        show(list);
+    }
+    document.getElementById('left-out').onclick = function() {
+      let num = input.value;
+      if (num)
+        list.shift(num);
+        show(list);
+    }
+    document.getElementById('right-out').onclick = function() {
+      let num = input.value;
+      if (num)
+        list.pop(num);
+        show(list);
+    }
+
+    function show(data){
+      if(numList.childElementCount){
+        numList.removeChild(document.querySelector('#num-list>div'));
+      }
+      let len = data.length;
+      let newlist = document.createElement('div');
+      for(let i = 0; i < len; i++){
+        let el = document.createElement('div');
+        el.innerHTML = data[i];
+        el.className = 'num-box';
+        newlist.appendChild(el);
+      }
+      numList.appendChild(newlist)
+    }
+
+
+  </script>
+
+</body>
+
+</html>
